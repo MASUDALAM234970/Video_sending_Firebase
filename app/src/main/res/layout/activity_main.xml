@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="?attr/colorSurface"/>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/process"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:id="@+id/imageView"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Select Video"
+        android:id="@+id/selectVideo"
+        android:layout_below="@id/imageView"
+        android:layout_margin="10sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Video"
+        android:layout_below="@id/selectVideo"
+        android:id="@+id/uploadVideo"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/geo"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="go"
+        android:textSize="20sp"
+        android:layout_below="@+id/uploadVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</RelativeLayout>
